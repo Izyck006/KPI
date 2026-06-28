@@ -1,5 +1,5 @@
-from app import app
-from models import db, User, Department
+from api.index import app
+from api.models import db, User, Department
 
 def seed_database():
     with app.app_context():
