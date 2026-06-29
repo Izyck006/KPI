@@ -47,10 +47,10 @@ class DailyReport(db.Model):
     qna_responses = db.Column(db.JSON, nullable=False) # Stores the short Q&A answers
     daily_description = db.Column(db.Text, nullable=False) # The written summary of work
     
-    # The AI Evaluator Output
+    
     ai_score = db.Column(db.Float, nullable=True) # Score out of 10
     
-    # Metadata
+
     submitted_at = db.Column(db.DateTime, default=datetime.utcnow)
     status = db.Column(db.String(20), default='PENDING_REVIEW') # 'PENDING_REVIEW', 'REVIEWED_BY_CEO'
 
