@@ -1,10 +1,10 @@
 {
-  "name": "kpi",
+  "name": "randaframes-kpi",
   "version": "1.0.0",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
-    "vercel-build": "vite build"
+    "build": "npx vite build",
+    "vercel-build": "npx vite build"
   },
   "dependencies": {
     "axios": "^1.18.1",
